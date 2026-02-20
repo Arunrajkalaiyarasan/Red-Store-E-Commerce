@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Red-Store </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Nav bar -->
+    <div class="container">
+        <div class="navbar">
+
+            <div class="logo">
+                <img src="images/logo.png" width="125px" alt="logo">
+            </div>
+            <nav>
+                <ul id="toggle-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="login.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" alt="" width="30px" height="30px"></a>
+            <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-- Product details -->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col2">
+                <img src="images/gallery-1.jpg" id="product_img">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/gallery-1.jpg" width="100%" class="small_img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-2.jpg" width="100%" class="small_img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-3.jpg" width="100%" class="small_img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-4.jpg" width="100%" class="small_img">
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+                <p>Home / T-shirt</p>
+                <h1>Red Printed T-Shirt by HRX</h1>
+                <h5><del>Rs.1500</del></h5>
+                <h2>Rs.500</h2>
+                <div class="size">
+                    <p class="shirt_size" onclick="selectSize(this)">S</p>
+                    <p class="shirt_size" onclick="selectSize(this)">M</p>
+                    <p class="shirt_size" onclick="selectSize(this)">L </p>
+                    <p class="shirt_size" onclick="selectSize(this)">XL</p>
+                    <p class="shirt_size" onclick="selectSize(this)">XXL</p>
+                </div>
+
+                <input type="number" value="1">
+
+                <div class="btn">
+                    <p>Add to Cart</p>
+                </div>
+
+                <h3>Product Details</h3>
+                <p>
+                    Give your summer wardrobe a style upgrade with the HRX
+                    Men's Active T-Shirt Team it with a pair of shorts for Your
+                    morning workout or a denims for an evenig out wiht the guys.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Similar Product -->
+     <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
+     </div>
+
+    <div class="small-container">
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-9.jpg">
+                <h4>Citizen Men's Eco Watch</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>Rs.1500</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg">
+                <h4>Sparx Peral Casual Shoes</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Rs.4000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg">
+                <h4>Campus Walking Shoes</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Rs.3500</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg">
+                <h4>Track Trousers Men's</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Rs.1000</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile Phone</p>
+                    <div class="inner-div">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Our Purpose is To Sustainably Make the Pleasure and Benefits
+                        of Sports Accesible to the Many.
+                    </p>
+                </div>
+
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupens</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affilate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="copyright">
+                <p>Copyright 2026 - Arunraj K</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Toggle menu script -->
+
+    <script>
+        var MenuItems = document.getElementById("toggle-menu");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+    <!--Size Selection -->
+    <script>
+        function selectSize(element) {
+
+            let sizes = document.getElementsByClassName("shirt_size");
+
+            // remove active style from all
+            for (let i = 0; i < sizes.length; i++) {
+                sizes[i].style.backgroundColor = "white";
+                sizes[i].style.color = "black";
+            }
+
+            // apply style to clicked one
+            element.style.backgroundColor = "rgb(255, 82, 59)";
+            element.style.color = "white";
+        }
+    </script>
+    <!-- Product Details -->
+
+    <script>
+        var product_img = document.getElementById("product_img");
+        var small_img = document.getElementsByClassName("small_img");
+
+        small_img[0].onclick = function () {
+            product_img.src = small_img[0].src;
+        }
+        small_img[1].onclick = function () {
+            product_img.src = small_img[1].src;
+        }
+        small_img[2].onclick = function () {
+            product_img.src = small_img[2].src;
+        }
+        small_img[3].onclick = function () {
+            product_img.src = small_img[3].src;
+        }
+    </script>
+</body>
+
+</html>
